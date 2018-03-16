@@ -1,0 +1,45 @@
+{
+    "name": "agentzilla/http",
+    "keywords": ["http_client", "proxy_http_client"],
+    "homepage": "https://github.com/AndreyMashukov/agentzilla-http",
+    "description": "HTTP client with proxy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Mashukov",
+            "email": "a.mashukov@yandex.ru",
+            "role": "Developer"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "Agentzilla\\HTTP\\": ["src"]
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "ext-curl": "*",
+        "ext-zlib": "*",
+        "ext-json": "*"
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "Tests\\": ["tests"]
+        }
+    },
+    "require-dev": {
+        "pdepend/pdepend": "^2.2",
+        "phpmd/phpmd": "^2.4",
+        "phploc/phploc": "^2.1",
+        "sebastian/phpcpd": "^2.0",
+        "phpdocumentor/phpdocumentor": "^2.9",
+        "mamuz/php-dependency-analysis": "^0.6",
+        "phpunit/phpunit": "^4.8",
+        "logics/phpunit-extensions": "^0.2||dev-trunk",
+        "logics/codesniffer": "^0.1||dev-trunk",
+        "logics/extcheck": "^0.1||dev-trunk",
+        "logics/http": "^0.1||dev-trunk",
+        "ext-SimpleXML": "*"
+    },
+    "prefer-stable": true
+}
